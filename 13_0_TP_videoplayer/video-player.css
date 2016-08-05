@@ -1,0 +1,70 @@
+/* general */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* video player */
+.videoplayer {
+    position:relative;
+    margin:0 auto;
+    box-shadow: 1px 1px 12px #555;
+    background-color: black;
+}
+
+.videoplayer  {
+    width:500px;
+}
+
+.videoplayer__video {
+    display:block;
+    width:100%;
+}
+
+.videoplayer__controls {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    opacity:0;
+    line-height: 18px;
+    background-color: rgb(230,98,35);
+    transition: 1s opacity ease-in;
+}
+
+.videoplayer:hover .videoplayer__controls {
+    opacity: 1;
+}
+
+.videoplayer__controls__logo {
+    width:50px;
+    position:absolute;
+    bottom:5px;
+    left:5px;
+    -webkit-filter: drop-shadow(1px 1px 5px rgba(30,30,30,0.8));
+}
+
+.videoplayer__controls__controls {
+    margin-left:60px;
+}
+
+.vpi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #EEEEEE;
+    padding: 2px 4px;
+    background:none;
+    border:none;
+}
+
+.vpi i  {
+    -webkit-filter: drop-shadow(1px 1px 7px rgba(50,50,50,0.8));
+    /*box-shadow: 1px 1px 12px #555;*/
+}
+.vpi#time {
+    float:right;
+}
+
+.vpi#fsb {
+    float:right;
+}

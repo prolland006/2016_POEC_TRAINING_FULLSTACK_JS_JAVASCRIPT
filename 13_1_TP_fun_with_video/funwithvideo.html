@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="funwithvideo.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin:0;
+            font-family: Arial;
+            background-color:black;
+        }
+        .header-block {
+            position:relative;
+        }
+        .header {
+            position:absolute;
+            top:0;
+            display:flex;
+            width:100%;
+            padding:20px;
+        }
+        .header__logo {
+            font-size:40px;
+            color:white;
+            text-decoration:none;
+        }
+
+        .header__logo i {
+            margin-right:10px;
+        }
+
+        .header__menuwrapper {
+            display:flex;
+            flex-grow:1;
+            color:white;
+            justify-content: flex-end;
+        }
+
+        .header__menuwrapper ul {
+            display:flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        .header__menuwrapper li {
+            margin:0px 10px;
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        .marketing {
+            display:flex;
+            flex-wrap:nowrap;
+            background-color: #000;
+            color:white;
+            padding:15px;
+            justify-content: space-around;
+        }
+
+        .marketing__topic {
+            width:calc(100%/4);
+            display:flex;
+            flex-direction: column;
+
+        }
+
+        .marketing__topic h1 {
+            text-align: center;
+            color:goldenrod;
+        }
+
+        .marketing__topic p {
+            text-align: center;
+        }
+
+        video {
+            width:100%;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<header class="header-block">
+    <div class="header">
+        <a href="" class="header__logo"><i class="fa fa-compass" aria-hidden="true"></i>BigBro</a>
+        <div class="header__menuwrapper">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Company</li>
+            </ul>
+        </div>
+    </div>
+    <video autoplay loop>
+        <source src="videos/webmvp8.webm" type="video/webm">
+        <source src="videos/webmvp8_512kb.mp4" type="video/mp4">
+        <source src="videos/webmvp8.ogv" type="video/ogg">
+    </video>
+</header>
+<section class="marketing">
+    <div class="marketing__topic">
+        <h1>We rock</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="marketing__topic">
+        <h1>You too</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="marketing__topic">
+        <h1>That's amazing</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</section>
+<script src="funwithvideo.js"></script>
+</body>
+</html>

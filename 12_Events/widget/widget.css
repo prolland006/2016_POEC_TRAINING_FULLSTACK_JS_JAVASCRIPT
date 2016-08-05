@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.widget {
+    border: 1px solid #999;
+}
+
+.widget__header {
+    display: flex;
+    background-color:#ccc;
+}
+
+.widget__header__title {
+    padding:5px 10px;
+    flex-grow: 1;
+}
+
+.widget__header__button-showhide {
+    width:20px;
+    height:20px;
+    background-image: url('img/noun_565691_cc.png');
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+.widget__content {
+    overflow: hidden;
+    padding:20px;
+}
+/** hidden **/
+.widget__content--hidden {
+    /*display: none;*/
+    height:0px;
+    padding:0px;
+}
+
+.widget__header__button-showhide--hidden {
+    background-image: url('img/noun_565686_cc.png');
+}

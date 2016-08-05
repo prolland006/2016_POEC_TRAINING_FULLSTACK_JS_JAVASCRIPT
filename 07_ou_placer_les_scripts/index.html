@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        console.log("dans le head");
+    </script>
+
+    <!--<script src="slow_script.js"></script>-->
+
+</head>
+<body>
+<p>Ma super application est en train de charger...</p>
+<script src="dom_manipulation.js"></script>
+<script>
+    console.log("avant body");
+</script>
+
+<!--
+L'utilisateur a l'impression de voir un site
+qui marche et qui affiche 'je charge quelque chose...
+
+L'attribut async permet de forcer un chargement asynchrone.
+-->
+<script src="slow_script.js"></script>
+</body>
+</html>

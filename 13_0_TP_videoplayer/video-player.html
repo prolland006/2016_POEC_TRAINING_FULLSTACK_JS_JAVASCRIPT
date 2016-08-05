@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="video-player.css">
+</head>
+<body>
+<div class="videoplayer">
+    <video class="videoplayer__video" poster="img/poster.png">
+        <source src="video/sea.mp4" type="video/mp4">
+        <source src="video/sea.ogv" type="video/ogg">
+        Your browser does not support the video tag or the file format of this video.
+    </video>
+    <div class="videoplayer__controls">
+        <img class="videoplayer__controls__logo" src="img/HTML5_Badge_64.png" alt="HTML 5 logo"/>
+        <div class="videoplayer__controls__controls">
+            <button class="vpi" id="play"><i class="fa fa-play"></i></button>
+            <button class="vpi" id="pause"><i class="fa fa-pause"></i></button>
+            <button class="vpi" id="volumeUp"><i class="fa fa-plus"></i></button>
+            <button class="vpi" id="volumeDown"><i class="fa fa-minus"></i></button>
+            <button class="vpi" id="fsb"><i class="fa fa-expand"></i></button>
+            <span class="vpi" id="time">0:00</span>
+        </div>
+    </div>
+</div>
+<ul>
+    <li><a href="https://www.w3.org/TR/html5/embedded-content-0.html#the-video-element">Video Element</a></li>
+    <li><a href="https://www.w3.org/2010/05/video/mediaevents.html">Media Events Demo</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">Video @MDN</a></li>
+</ul>
+<p>HTML 5 logo from <a href="https://www.w3.org/html/logo/">W3C</a></p>
+<script src="video-player.js"></script>
+</body>
+</html>
