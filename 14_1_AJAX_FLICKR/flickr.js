@@ -10,6 +10,7 @@ xhr.onreadystatechange = function() {
     if(xhr.readyState == 4) { // xhr.DONE
         let jsonResponse = JSON.parse(xhr.responseText);
         // console.log(jsonResponse.photos.photo);
+
         let items = jsonResponse.photos.photo.map(
             photo => new Item(photo.title, buildUrl(photo))
         );
